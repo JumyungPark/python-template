@@ -20,3 +20,10 @@ repos:
   rev: v0.0.65
   hooks:
     - id: ty
+- repo: https://github.com/codespell-project/codespell
+  rev: v2.4.1
+  hooks:
+  - id: codespell
+    language: python
+    additional_dependencies:
+      - tomli
