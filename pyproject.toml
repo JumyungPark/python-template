@@ -19,3 +19,18 @@ dev = [
     "ruff>=0.16.1",
     "ty>=0.0.65",
 ]
+
+[tool.ruff.lint]
+select = [
+    "D",
+    # Augment the convention by requiring an imperative mood for all docstrings.
+    "D401",
+]
+
+ignore = [
+    # Relax the convention by _not_ requiring documentation for every function parameter.
+    "D417",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
