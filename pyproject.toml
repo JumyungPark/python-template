@@ -1,7 +1,7 @@
 [project]
 name = "python-template"
 version = "0.1.0"
-description = "Add your description here"
+description = "A modern Python project template"
 readme = "README.md"
 authors = [
     { name = "Jumyung Park", email = "jumyung.public@gmail.com" }
@@ -34,3 +34,6 @@ ignore = [
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["D104"]
